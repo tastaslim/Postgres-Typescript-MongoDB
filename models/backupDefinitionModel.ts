@@ -9,7 +9,7 @@ const backupDefinitionSchema = new mongoose.Schema(
     is_deleted: { type: Boolean, required: true },
     created_by: { type: Number, required: true },
     updated_by: { type: Number, required: true },
-    neurons: { type: Boolean, required: false, default: true },
+    new_tech_stack: { type: Boolean, required: false, default: true },
   },
   { timestamps: true }, // This will automatically add the createdAt and updatedAt fields for us
 );
