@@ -1,0 +1,28 @@
+### List Characters
+GET http://localhost:3000/characters
+
+
+### List Employees
+GET http://localhost:3000/backups
+
+
+### Save Employee
+POST http://localhost:3000/save
+
+{
+    "name": "Second Backup",
+    "project_id": 1,
+    "org_id": 170,
+    "created_by": 1,
+    "updated_by": 1,
+    "backup_type": "highfrequency"
+}
+
+
+### Get Employee
+GET http://localhost:3000/backups/1
+
+
+### Get Employee
+DELETE  http://localhost:3000/employees/63a7b4f6000f1d61015897ef
+
