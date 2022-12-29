@@ -6,3 +6,5 @@ export const mapRows = (data) => {
   const keys = _.keys(data.rows[0]);
   return keys.length === 1 ? _.map(data.rows, (row) => row[keys[0]]) : data.rows;
 };
+
+export const apiVersion = 'v1';

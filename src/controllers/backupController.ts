@@ -1,7 +1,8 @@
+import { ReqUser } from './../../types/requser.types.d';
 import { logger } from '../../config/loggerConfig';
 import { ApiResponse } from '../../config/responseConfig';
 import { Request, Response } from 'express';
-import { BackupDefinitionModel } from '../../models/backupDefinitionModel';
+// import { BackupDefinitionModel } from '../../models/backupDefinitionModel';
 import { backupService } from '../../db/postgres/backupDB';
 class backupController {
   public async saveDefinition(req: Request, res: Response) {
@@ -37,7 +38,7 @@ class backupController {
     }
   }
 
-  public async listDefinitions(req: Request, res: Response) {
+  public async listDefinitions(req: Request | ReqUser, res: Response) {
     /*
     // MongoDB code
     try {
@@ -50,7 +51,8 @@ class backupController {
     */
 
     try {
-      const response = await backupService.listBackupDefinitions();
+      const { user } = req.user as ReqUser;
+      const response = await backupService.listBackupDefinitions(user.organizationId);
       return ApiResponse.success(res, response);
     } catch (err) {
       logger.error(`Error listing backups`);
@@ -82,6 +84,8 @@ class backupController {
   }
 
   public async deleteDefinition(req: Request, res: Response) {
+    /*
+    // MongoDB code
     try {
       const employeeId = req.params.id;
       const response = await BackupDefinitionModel.deleteOne({ _id: employeeId });
@@ -90,14 +94,35 @@ class backupController {
       logger.error(`Error removing employee`);
       return ApiResponse.serverError(res, err);
     }
+    */
+
+    try {
+      const definitionId = req.params.id;
+      const response = await backupService.getBackupDefinition(definitionId);
+      return ApiResponse.success(res, response);
+    } catch (err) {
+      logger.error(`Error deleting backup`);
+      return ApiResponse.serverError(res, err);
+    }
   }
 
   public async updateDefinition(req: Request, res: Response) {
+    /*
+    // MongoDB code
     try {
       const response = await BackupDefinitionModel.updateMany(req.body);
       return ApiResponse.success(res, response);
     } catch (err) {
       logger.error(`Error removing employee`);
+      return ApiResponse.serverError(res, err);
+    }
+    */
+
+    try {
+      const response = await backupService.updateBackupDefinition(req.body);
+      return ApiResponse.success(res, `Definition Updated Successfully ${response}`);
+    } catch (err) {
+      logger.error(`Error updating backup`);
       return ApiResponse.serverError(res, err);
     }
   }
