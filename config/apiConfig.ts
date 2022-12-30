@@ -8,3 +8,6 @@ export const mapRows = (data) => {
 };
 
 export const apiVersion = 'v1';
+export const EXPIRY_TIME = '7d'; // 7 days
+export const SECRET_KEY = 'TASLIM_SECRET_KEY';
+export const ENCRYPTION_KEY = 'TASLIM_ENCRYPTION_KEY';

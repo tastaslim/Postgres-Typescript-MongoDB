@@ -1,8 +1,3 @@
-export type User = {
-  params: {
-    id: number;
-  };
-};
 export interface createBackupDefinitionType {
   name: string;
   project_id: number;

@@ -16,7 +16,7 @@ export class BaseDBService {
       const result = mapperFunction(data);
       return result;
     } catch (err) {
-      logger.error(`Error executing query: ${query}`);
+      logger.error(`Query(${query}) | Error(${err}))`);
     }
   }
 
@@ -24,7 +24,7 @@ export class BaseDBService {
     try {
       return this._execute(query, values, mapRows);
     } catch (err) {
-      logger.error(`Error executing query: ${query}`);
+      logger.error(`Query(${query}) | Error(${err}))`);
     }
   }
 
