@@ -1,10 +1,10 @@
-import _ from 'lodash';
+import { keys, isEmpty, map } from 'lodash';
 
 export const basePath = 'https://dog.ceo/api';
 export const mapRows = (data) => {
-  if (_.isEmpty(data.rows)) return null;
-  const keys = _.keys(data.rows[0]);
-  return keys.length === 1 ? _.map(data.rows, (row) => row[keys[0]]) : data.rows;
+  if (isEmpty(data.rows)) return null;
+  const rowKeys = keys(data.rows[0]);
+  return rowKeys.length === 1 ? map(data.rows, (row) => row[rowKeys[0]]) : data.rows;
 };
 
 export const apiVersion = 'v1';
