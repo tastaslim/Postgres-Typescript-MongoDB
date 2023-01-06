@@ -7,7 +7,8 @@
     "test": "jest",
     "build": "tsc",
     "start": "npm run build && node dist/app.js",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "buildfordebug": "tsc --project ./tsconfig.json --outDir ./out"
   },
   "keywords": [],
   "author": "",

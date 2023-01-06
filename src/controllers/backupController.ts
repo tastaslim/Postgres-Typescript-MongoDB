@@ -55,7 +55,7 @@ class backupController {
       const response = await backupService.listBackupDefinitions(user.organizationId);
       return ApiResponse.success(res, response);
     } catch (err) {
-      logger.error(`Error listing backups`);
+      logger.error(`Error(${err}) | Message(Error listing backups)`);
       return ApiResponse.serverError(res, err);
     }
   }
