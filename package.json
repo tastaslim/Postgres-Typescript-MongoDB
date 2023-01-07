@@ -74,7 +74,7 @@
 		"winston": "^3.8.2"
 	},
 	"lint-staged": {
-		"*.{ts,js}": "eslint --cache --fix"
+		"*.{ts,js}": "eslint --fix"
 	},
 	"hooks": {
 		"pre-commit": "npm run lint"
