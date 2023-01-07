@@ -1,6 +1,6 @@
-import { logger } from './../../config/loggerConfig';
+import { logger } from '../../config/logger.config';
 import { Response, Request } from 'express';
-import { ApiResponse } from '../../config/responseConfig';
+import { ApiResponse } from '../../config/response.config';
 import { authDBService } from '../../db/postgres/authDB';
 import { securityService } from '../../util/security/securityProvider.util';
 class authController {

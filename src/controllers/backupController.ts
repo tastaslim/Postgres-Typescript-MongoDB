@@ -1,12 +1,12 @@
 import { ReqUser } from './../../types/requser.types.d';
-import { logger } from '../../config/loggerConfig';
-import { ApiResponse } from '../../config/responseConfig';
+import { logger } from '../../config/logger.config';
+import { ApiResponse } from '../../config/response.config';
 import { Request, Response } from 'express';
 // import { BackupDefinitionModel } from '../../models/backupDefinitionModel';
 import { backupService } from '../../db/postgres/backupDB';
 class backupController {
-  public async saveDefinition(req: Request, res: Response) {
-    /*
+	public async saveDefinition(req: Request, res: Response) {
+		/*
     // MongoDB code
     try {
       const definition = new BackupDefinitionModel({
@@ -29,17 +29,17 @@ class backupController {
     }
     */
 
-    try {
-      const response = await backupService.createBackupDefinition(req.body);
-      return ApiResponse.success(res, response);
-    } catch (err) {
-      logger.error(`Error saving backup`);
-      return ApiResponse.serverError(res, err);
-    }
-  }
+		try {
+			const response = await backupService.createBackupDefinition(req.body);
+			return ApiResponse.success(res, response);
+		} catch (err) {
+			logger.error(`Error saving backup`);
+			return ApiResponse.serverError(res, err);
+		}
+	}
 
-  public async listDefinitions(req: Request | ReqUser, res: Response) {
-    /*
+	public async listDefinitions(req: Request | ReqUser, res: Response) {
+		/*
     // MongoDB code
     try {
       const response = await BackupDefinitionModel.find();
@@ -50,18 +50,18 @@ class backupController {
     }
     */
 
-    try {
-      const { user } = req.user as ReqUser;
-      const response = await backupService.listBackupDefinitions(user.organizationId);
-      return ApiResponse.success(res, response);
-    } catch (err) {
-      logger.error(`Error(${err}) | Message(Error listing backups)`);
-      return ApiResponse.serverError(res, err);
-    }
-  }
+		try {
+			const { user } = req.user as ReqUser;
+			const response = await backupService.listBackupDefinitions(user.organizationId);
+			return ApiResponse.success(res, response);
+		} catch (err) {
+			logger.error(`Error(${err}) | Message(Error listing backups)`);
+			return ApiResponse.serverError(res, err);
+		}
+	}
 
-  public async getDefinition(req: Request, res: Response) {
-    /*
+	public async getDefinition(req: Request, res: Response) {
+		/*
     // MongoDB code
     try {
       const employeeId = req.params.id;
@@ -73,18 +73,18 @@ class backupController {
     }
     */
 
-    try {
-      const definitionId = req.params.id;
-      const response = await backupService.getBackupDefinition(definitionId);
-      return ApiResponse.success(res, response);
-    } catch (err) {
-      logger.error(`Error getting backup`);
-      return ApiResponse.serverError(res, err);
-    }
-  }
+		try {
+			const definitionId = req.params.id;
+			const response = await backupService.getBackupDefinition(definitionId);
+			return ApiResponse.success(res, response);
+		} catch (err) {
+			logger.error(`Error getting backup`);
+			return ApiResponse.serverError(res, err);
+		}
+	}
 
-  public async deleteDefinition(req: Request, res: Response) {
-    /*
+	public async deleteDefinition(req: Request, res: Response) {
+		/*
     // MongoDB code
     try {
       const employeeId = req.params.id;
@@ -96,18 +96,18 @@ class backupController {
     }
     */
 
-    try {
-      const definitionId = req.params.id;
-      const response = await backupService.getBackupDefinition(definitionId);
-      return ApiResponse.success(res, response);
-    } catch (err) {
-      logger.error(`Error deleting backup`);
-      return ApiResponse.serverError(res, err);
-    }
-  }
+		try {
+			const definitionId = req.params.id;
+			const response = await backupService.getBackupDefinition(definitionId);
+			return ApiResponse.success(res, response);
+		} catch (err) {
+			logger.error(`Error deleting backup`);
+			return ApiResponse.serverError(res, err);
+		}
+	}
 
-  public async updateDefinition(req: Request, res: Response) {
-    /*
+	public async updateDefinition(req: Request, res: Response) {
+		/*
     // MongoDB code
     try {
       const response = await BackupDefinitionModel.updateMany(req.body);
@@ -118,14 +118,14 @@ class backupController {
     }
     */
 
-    try {
-      const response = await backupService.updateBackupDefinition(req.body);
-      return ApiResponse.success(res, `Definition Updated Successfully ${response}`);
-    } catch (err) {
-      logger.error(`Error updating backup`);
-      return ApiResponse.serverError(res, err);
-    }
-  }
+		try {
+			const response = await backupService.updateBackupDefinition(req.body);
+			return ApiResponse.success(res, `Definition Updated Successfully ${response}`);
+		} catch (err) {
+			logger.error(`Error updating backup`);
+			return ApiResponse.serverError(res, err);
+		}
+	}
 }
 
 export const BackupController = new backupController();
