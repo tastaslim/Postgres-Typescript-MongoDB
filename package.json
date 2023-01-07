@@ -77,6 +77,6 @@
 		"*.{ts,js}": "eslint --cache --fix"
 	},
 	"hooks": {
-		"pre-commit": "lint-staged"
+		"pre-commit": "npm run lint"
 	}
 }
