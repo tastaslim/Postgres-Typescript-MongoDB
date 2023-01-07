@@ -12,5 +12,8 @@ export interface SecurityService {
   simpleEncrypt(data: string): string;
   generateJwtToken(payload): string;
   decodeJwtToken(token: string): string;
-  convertToVariousEncoding(from: number, to: BufferEncoding | undefined): (str: WithImplicitCoercion<ArrayBuffer | SharedArrayBuffer>) => string;
+  convertToVariousEncoding(
+    from: number,
+    to: BufferEncoding | undefined
+  ): (str: WithImplicitCoercion<ArrayBuffer | SharedArrayBuffer>) => string;
 }
