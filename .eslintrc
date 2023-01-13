@@ -8,7 +8,7 @@
 		"plugin:@typescript-eslint/recommended"
 	],
 	"rules": {
-		"no-console": 2, // Remember, this means error!
+		// "no-console": 2, // Remember, this means error!
 		"no-debugger": 2,
 		"no-empty-function": 2,
 		"no-use-before-define": 2,

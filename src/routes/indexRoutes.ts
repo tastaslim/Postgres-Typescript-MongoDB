@@ -11,20 +11,20 @@ import cors from 'cors';
 import express from 'express';
 import passport from 'passport';
 export const registerMiddleware = (expressApp: Express) => {
-  expressApp.set('trust proxy', true);
-  expressApp.use(cors());
-  expressApp.use(compression());
-  expressApp.use(helmet());
-  expressApp.use(sqlInjectionMiddleware);
-  expressApp.use(passport.initialize());
-  expressApp.use(apiKeyMiddleware);
-  expressApp.use(jwtAuthMiddleware);
-  expressApp.use(express.json({ limit: '500mb' }));
-  expressApp.use(express.urlencoded({ limit: '500mb', extended: false }));
+	expressApp.set('trust proxy', true);
+	expressApp.use(cors());
+	expressApp.use(compression());
+	expressApp.use(helmet());
+	expressApp.use(sqlInjectionMiddleware);
+	expressApp.use(passport.initialize());
+	expressApp.use(apiKeyMiddleware);
+	expressApp.use(jwtAuthMiddleware);
+	expressApp.use(express.json({ limit: '500mb' }));
+	expressApp.use(express.urlencoded({ limit: '500mb', extended: false }));
 };
 
 export const registerRoutes = (expressApp: Express) => {
-  expressApp.use(backupRoute);
-  expressApp.use(characterRoute);
-  expressApp.use(authRoute);
+	expressApp.use(backupRoute);
+	expressApp.use(characterRoute);
+	expressApp.use(authRoute);
 };
