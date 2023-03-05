@@ -1,4 +1,4 @@
-import {Soldier} from "./soldier";
+import { Soldier } from './soldier';
 
 export class Gunman extends Soldier {
 	constructor(props) {
@@ -6,12 +6,12 @@ export class Gunman extends Soldier {
 		this.refillBehaviour = props.refillBehaviour;
 		this.repairBehaviour = props.repairBehaviour;
 	}
-	fight() {
-		console.log('Gunman is fighting');
+	fight(): string {
+		return 'Gunman is fighting';
 	}
 
-	move() {
-		console.log('Gunman is moving');
+	move(): string {
+		return 'Gunman is moving';
 	}
 	refill() {
 		return this.refillBehaviour.refill();

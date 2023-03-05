@@ -4,6 +4,12 @@ import { ApiResponse } from '../../config/response.config';
 import { basePath } from '../../config/api.config';
 import axios from 'axios';
 export class CharacterController {
+	/**
+	 *
+	 * @param req
+	 * @param res
+	 * @returns
+	 */
 	public async listCharacters(req: Request, res: Response) {
 		try {
 			logger.info(`Message(Listing characters)`);

@@ -1,22 +1,21 @@
-import {Soldier} from "./soldier";
+import { Soldier } from './soldier';
 
 export class Robot extends Soldier {
-
 	constructor(props) {
 		super();
 		this.refillBehaviour = props.refillBehaviour;
 		this.repairBehaviour = props.repairBehaviour;
 	}
-	fight() {
-		console.log('Robot is fighting');
+	fight(): string {
+		return 'Robot is fighting';
 	}
-	move() {
-		console.log('Robot is moving');
+	move(): string {
+		return 'Robot is moving';
 	}
-	refill(){
+	refill() {
 		return this.refillBehaviour.refill();
 	}
-	repair(){
+	repair() {
 		return this.repairBehaviour.repair();
 	}
 }

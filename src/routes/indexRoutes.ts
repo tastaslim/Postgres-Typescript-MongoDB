@@ -12,6 +12,7 @@ import express from 'express';
 import passport from 'passport';
 export const registerMiddleware = (expressApp: Express) => {
 	expressApp.set('trust proxy', true);
+	expressApp.use(express.json({ limit: '500mb' }));
 	expressApp.use(cors());
 	expressApp.use(compression());
 	expressApp.use(helmet());
@@ -19,7 +20,6 @@ export const registerMiddleware = (expressApp: Express) => {
 	expressApp.use(passport.initialize());
 	expressApp.use(apiKeyMiddleware);
 	expressApp.use(jwtAuthMiddleware);
-	expressApp.use(express.json({ limit: '500mb' }));
 	expressApp.use(express.urlencoded({ limit: '500mb', extended: false }));
 };
 

@@ -5,32 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13fbcf9b-4599-4b5e-88a6-a6fe9c9a25e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MongoDB+Postgres+Typescript.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/documentation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/gunman.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/paladin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/robot.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/soldier.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/spearman.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/refill/countbasedrefill.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/refill/norefill.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/refill/refillable.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/refill/timebasedrefill.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/repair/autorepair.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/repair/manuallrepair.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/repair/norepair.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/repair/repairable.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/superhero.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/Strategy Pattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Patterns/2.Observer Pattern/observable/iphone.observable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Patterns/2.Observer Pattern/observable/macbook.observable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Patterns/2.Observer Pattern/observable/stock.observable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Patterns/2.Observer Pattern/observer/email.observer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Patterns/2.Observer Pattern/observer/notification.observer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Patterns/2.Observer Pattern/observer/sms.observer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/gunman.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/gunman.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/paladin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/paladin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/robot.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/robot.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/soldier.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/soldier.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/spearman.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/spearman.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/superhero.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/superhero.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/joi/base.validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/joi/base.validation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/indexRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/indexRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/characterController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/characterController.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,26 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/taslimarif/Desktop/MongoDB+Postgres+Typescript/Design Patterns/1.Strategy Pattern/strategy/repair",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/taslimarif/Desktop/MongoDB+Postgres+Typescript/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/Users/taslimarif/Desktop/MongoDB+Postgres+Typescript/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/taslimarif/Desktop/MongoDB+Postgres+Typescript/Design Patterns/1.Strategy Pattern/strategy/repair&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/taslimarif/Desktop/MongoDB+Postgres+Typescript/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/taslimarif/Desktop/MongoDB+Postgres+Typescript/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Design Patterns/1.Strategy Pattern/strategy/repair" />

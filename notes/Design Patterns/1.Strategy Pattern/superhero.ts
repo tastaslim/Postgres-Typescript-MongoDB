@@ -1,20 +1,21 @@
 import {Soldier} from "./soldier";
 
-export class Spearman extends Soldier {
-
+export class Superhero extends Soldier {
 	constructor(props) {
 		super();
 		this.refillBehaviour = props.refillBehaviour;
 		this.repairBehaviour = props.repairBehaviour;
 	}
-	fight() {
-		console.log('Spearman is fighting');
+
+	fight():string {
+		return 'Superhero is fighting';
 	}
-	move() {
-		console.log('Spearman is moving');
+	move():string {
+		return 'Superhero is moving';
 	}
 
 	refill() {
+		console.log('Superhero is refilling');
 		return this.refillBehaviour.refill();
 	}
 

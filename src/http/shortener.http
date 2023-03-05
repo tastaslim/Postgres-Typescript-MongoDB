@@ -1,10 +1,22 @@
-### List Characters
-POST http://localhost:3000/api/v1/auth/token
+### Register User
+POST http://localhost:3000/api/v1/auth/register
+x-api-key: 0123cv19-01d1-01f-af1-012345abcdef
+
+{
+    "password" : "Aman",
+		"firstname" : "Aman",
+		"lastname" : "Thakur",
+		"emailaddress" : "amanthakur200@gmail.com",
+}
+
+### Login User
+POST http://localhost:3000/api/v1/auth/login
+x-api-key: 0123cv19-01d1-01f-af1-012345abcdef
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpYXQiOjE2NzgwMDU1NDMsImV4cCI6MTY3ODA5MTk0M30.PMe1VeIEZsV3jXlmQq5MxFWkbd5wCVECshkMGbQpLGM
 
 {
     "password" : "taslim"
 }
-
 
 ### List Employees
 GET http://localhost:3000/api/v1/backups
